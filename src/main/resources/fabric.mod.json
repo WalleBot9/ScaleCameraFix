@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "scale-camera-fix",
+	"version": "${version}",
+	"name": "Scale Camera Fix",
+	"description": "This mod fixes the game camera when the scale attribute value is changed.",
+	"authors": [
+		"MrHeller13"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/scale-camera-fix",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/scale-camera-fix/icon.png",
+	"environment": "*",
+	"mixins": [
+		"scale-camera-fix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
