@@ -39,7 +39,7 @@ public class CameraMixin {
 
 			float var7 = abstractClientPlayerEntity.distanceMoved - abstractClientPlayerEntity.lastDistanceMoved;
 			float g = -(abstractClientPlayerEntity.distanceMoved + var7 * tickDelta);
-			float h = MathHelper.lerp(tickDelta, abstractClientPlayerEntity.prevStrideDistance, abstractClientPlayerEntity.strideDistance);
+			float h = MathHelper.lerp(tickDelta, abstractClientPlayerEntity.lastStrideDistance, abstractClientPlayerEntity.strideDistance);
 			matrices.translate(MathHelper.sin(g * (float) Math.PI) * scaleMultiplier * h * 0.5F,
 								 -Math.abs(MathHelper.cos(g * (float) Math.PI) * scaleMultiplier * h), 0.0F);
 			matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(MathHelper.sin(g * (float) Math.PI) * h * 3.0F));
